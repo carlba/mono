@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": "..",
+    },
+    {
+      "name": "math",
+      "path": ".",
+    },
+    {
+      "name": "typescript-playground",
+      "path": "../typescript-playground",
+    },
+    {
+      "name": "factories",
+      "path": "../factories",
+    },
+  ],
+  "settings": {
+    "jest.disabledWorkspaceFolders": ["mono"],
+  },
+}
