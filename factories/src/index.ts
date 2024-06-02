@@ -19,6 +19,8 @@ const personFactory = Factory.Sync.makeFactory<Person>({
   parent_id: Factory.each(i => faker.number.int({ min: 1, max: i - 1 })),
 });
 
+personFactory.build();
+
 export function helloWorld() {
   return 'Hello World!';
 }

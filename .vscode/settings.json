@@ -1,4 +1,4 @@
 {
   "cSpell.words": ["test"],
-  "eslint.workingDirectories": ["mqwatcher"]
+  "eslint.workingDirectories": ["mqwatcher", "math", "typescript-playground"]
 }

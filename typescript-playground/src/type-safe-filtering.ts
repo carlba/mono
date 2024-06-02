@@ -4,6 +4,7 @@ interface Person {
   status: 'active' | 'inactive';
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const persons: Person[] = [
   {
     name: 'Carl',

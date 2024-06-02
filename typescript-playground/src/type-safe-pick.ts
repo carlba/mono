@@ -1,4 +1,4 @@
-const isInArray = <T, A extends T>(item: T, array: ReadonlyArray<A>): item is A =>
+const isInArray = <T, A extends T>(item: T, array: readonly A[]): item is A =>
   array.includes(item as A);
 
 export function pick<O extends object, T extends keyof O>(obj: O, keys: T[]): Pick<O, T> {

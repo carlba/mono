@@ -1,4 +1,4 @@
-import { omit, pick } from './type-safe-pick';
+import { omit } from './type-safe-pick';
 
 import { pick as lodashPick } from 'lodash';
 

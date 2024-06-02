@@ -32,15 +32,14 @@ interface BaseEntity {
   id: string;
 }
 
-interface BaseEntityWithIndex extends BaseEntity {
-  [key: string]: any;
-}
+type BaseEntityWithIndex = BaseEntity & Record<string, unknown>;
 
 export type WhereInput<T> = {
   [K in keyof T]: Filter<T[K]>;
 };
 
-const generateWhereInput = <E extends BaseEntity>(whereInput: WhereInput<BaseEntityWithIndex>) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const generateWhereInput = (whereInput: WhereInput<BaseEntityWithIndex>) => {
   Object.entries(whereInput).forEach(([key, value]) => {
     console.log(key, value);
   });
