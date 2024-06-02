@@ -1,7 +1,7 @@
 import { Command } from '@commander-js/extra-typings';
 import * as amqplib from 'amqplib';
 
-const program = new Command()
+new Command()
   .name('watch')
   .description('Watch MQ')
   .version('0.0.1')
@@ -12,7 +12,7 @@ const program = new Command()
     const channel = await conn.createChannel();
     await channel.assertQueue(queue, { deadLetterExchange: 'dlx' });
     await channel.bindQueue(queue, 'pocketlaw', '');
-    channel.consume(queue, msg => {
+    await channel.consume(queue, msg => {
       if (msg !== null) {
         console.log(msg.content.toString());
         channel.ack(msg);
