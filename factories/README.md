@@ -1,3 +1,3 @@
-# typescript-template
+# factories
 
-A template for a Typescript repository
+Playing with factories

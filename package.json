@@ -1,0 +1,14 @@
+{
+  "name": "mono",
+  "version": "0.0.1",
+  "description": "My mono repo",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlba/mono"
+  },
+  "author": "carlba",
+  "license": "UNLICENSED"
+}
