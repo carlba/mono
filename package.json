@@ -1,0 +1,17 @@
+{
+  "name": "mono",
+  "description": "First attempt of monorepo",
+  "version": "1.0.0",
+  "private": false,
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "author": "carlba",
+  "homepage": "https://github.com/carlba/mono",
+  "bugs": {
+    "url": "https://github.com/carlba/mono"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pocketsolutions/mono ="
+  }
+}
