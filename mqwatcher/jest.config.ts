@@ -5,4 +5,5 @@ export default {
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
   coverageDirectory: '../coverage/mqwatcher',
+  testPathIgnorePatterns: ['/node_modules/', '/dist/'], 
 };
