@@ -10,9 +10,10 @@ function main() {
 
   const isDevMode = devMode === '--dev';
 
-  const scriptsDir = 'src';
+  const scriptsDir = __dirname;
+
   const scripts = readdirSync(scriptsDir)
-    .filter(file => extname(file) === '.ts' && !file.endsWith('.spec.ts'))
+    .filter(file => ['.ts', '.js'].includes(extname(file))  && !file.endsWith('.spec.ts') && !file.endsWith('.spec.js') && !file.endsWith('js.map'))
     .map(file => join(scriptsDir, file));
 
   scripts.forEach((name, index) => {
@@ -29,10 +30,10 @@ function main() {
     const child = spawn(
       'npx',
       [
-        isDevMode ? 'nodemon' : 'tsx',
+        isDevMode ? 'nodemon' : 'node',
         '-r',
         'dotenv/config',
-        `${scripts[parseInt(answer, 10) - 1]}`,
+        `${scripts[parseInt(answer, 10) - 1]}`, ...isDevMode ? ['-q'] : []
       ],
       {
         stdio: 'inherit',
