@@ -8,6 +8,6 @@
     "esModuleInterop": true,
     "resolveJsonModule": true
   },
-  "include": ["src"],
+  "include": ["src", "launcher.ts"],
   "exclude": ["node_modules"]
 }
