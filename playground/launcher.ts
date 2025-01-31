@@ -1,7 +1,7 @@
-import { globSync } from 'fs';
 import * as readline from 'node:readline';
-import { parse } from 'node:path';
+import { extname, join, parse } from 'node:path';
 import { spawn } from 'node:child_process';
+import { readdirSync } from 'node:fs';
 
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
@@ -10,7 +10,10 @@ function main() {
 
   const isDevMode = devMode === '--dev';
 
-  const scripts = globSync('src/!(*.spec).ts');
+  const scriptsDir = 'src';
+  const scripts = readdirSync(scriptsDir)
+    .filter(file => extname(file) === '.ts' && !file.endsWith('.spec.ts'))
+    .map(file => join(scriptsDir, file));
 
   scripts.forEach((name, index) => {
     console.log(`${index + 1}: ${parse(name).name}`);
