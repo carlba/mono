@@ -42,6 +42,7 @@
     "typescript-eslint": "^8.22.0"
   },
   "dependencies": {
+    "@js-temporal/polyfill": "^0.4.4",
     "lodash": "^4.17.21"
   }
 }
