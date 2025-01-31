@@ -1,2 +1,0 @@
-[project]
-start_command = "cd playground && npm install && npx tsx src/timezone.ts"
