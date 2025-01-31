@@ -1,5 +1,7 @@
 import { Temporal } from '@js-temporal/polyfill';
 
+// https://tc39.es/proposal-temporal/docs/cookbook.html
+
 console.log(`✅ Current time in ISO 8601 is ${new Date().toISOString()}`);
 console.log(
   `✅ Current time in ISO 8601 using Temporal ${Temporal.Now.plainDateTimeISO().toString()}`
