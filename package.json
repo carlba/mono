@@ -10,6 +10,7 @@
   "bugs": {
     "url": "https://github.com/carlba/mono"
   },
+  "scripts": {"start": "cd playground && npm install"},
   "repository": {
     "type": "git",
     "url": "git@github.com:pocketsolutions/mono ="
