@@ -10,6 +10,9 @@
   "bugs": {
     "url": "https://github.com/carlba/mono"
   },
+  "scripts": {
+    "start": "pnpm --filter playground run start:dev"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:pocketsolutions/mono ="

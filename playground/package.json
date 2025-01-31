@@ -1,7 +1,7 @@
 {
-  "name": "typescript-playground",
-  "description": "A short project description",
-  "version": "0.0,1",
+  "name": "playground",
+  "description": "Small test projects",
+  "version": "0.0.1",
   "private": false,
   "license": "UNLICENSED",
   "type": "commonjs",
