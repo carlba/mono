@@ -9,8 +9,8 @@ console.log(
 
 console.log(`✅ Current time in epoch ${Temporal.Now.instant().epochMilliseconds}`);
 
-const timeInMexicoCity = Temporal.ZonedDateTime.from('2025-01-30T12:00[America/Mexico_City]');
+const timeInMexicoCity = Temporal.ZonedDateTime.from('2025-01-30T09:00[Africa/Dar_es_Salaam]');
 
 console.log(
-  `✅ At 12:00 in CDMX it is ${timeInMexicoCity.withTimeZone('Europe/Stockholm').toString()}`
+  `✅ At 12:00 in CDMX it is ${timeInMexicoCity.withTimeZone('America/Mexico_City').toString()}`
 );
