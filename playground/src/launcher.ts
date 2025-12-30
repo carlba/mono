@@ -13,7 +13,13 @@ function main() {
   const scriptsDir = __dirname;
 
   const scripts = readdirSync(scriptsDir)
-    .filter(file => ['.ts', '.js'].includes(extname(file))  && !file.endsWith('.spec.ts') && !file.endsWith('.spec.js') && !file.endsWith('js.map'))
+    .filter(
+      file =>
+        ['.ts', '.js'].includes(extname(file)) &&
+        !file.endsWith('.spec.ts') &&
+        !file.endsWith('.spec.js') &&
+        !file.endsWith('js.map')
+    )
     .map(file => join(scriptsDir, file));
 
   scripts.forEach((name, index) => {
@@ -30,10 +36,11 @@ function main() {
     const child = spawn(
       'npx',
       [
-        isDevMode ? 'nodemon' : 'node',
+        isDevMode ? 'nodemon' : 'tsx',
         '-r',
         'dotenv/config',
-        `${scripts[parseInt(answer, 10) - 1]}`, ...isDevMode ? ['-q'] : []
+        `${scripts[parseInt(answer, 10) - 1]}`,
+        ...(isDevMode ? ['-q'] : []),
       ],
       {
         stdio: 'inherit',
@@ -41,14 +48,19 @@ function main() {
     );
 
     child.on('exit', signal => {
+      console.log('test', signal);
       rl.close();
+
       process.exit(signal);
+    });
+
+    process.on('exit', signal => {
+      console.log('test', signal);
     });
 
     process.on('SIGTERM', () => {
       console.log('Main process received SIGTERM. Forwarding to child...');
       child.kill('SIGTERM'); // Pass SIGTERM to child process
-      rl.close();
     });
   });
 }

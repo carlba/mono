@@ -16,8 +16,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node dist/launcher.js",
-    "start:dev": "tsx --no-warnings src/launcher.ts --dev",
+    "start": "npm run build && node dist/index.js",
+    "start:dev": "tsx --no-warnings src/index.ts --dev",
     "test": "jest",
     "lint": "eslint .",
     "format": "prettier --write .",

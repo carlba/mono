@@ -14,3 +14,5 @@ const timeInMexicoCity = Temporal.ZonedDateTime.from('2025-01-30T09:00[Africa/Da
 console.log(
   `✅ At 12:00 in CDMX it is ${timeInMexicoCity.withTimeZone('America/Mexico_City').toString()}`
 );
+
+Temporal.Instant.fromEpochSeconds(1738856692);

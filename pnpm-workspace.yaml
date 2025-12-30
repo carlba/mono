@@ -3,3 +3,5 @@ packages:
   - clima-weather
   - math
   - factories
+  - pino
+  - mqwatcher

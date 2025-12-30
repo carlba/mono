@@ -17,6 +17,9 @@
     },
     {
       "path": "mqwatcher"
+    },
+    {
+      "path": "pino"
     }
   ],
   "settings": {
