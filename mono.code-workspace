@@ -20,11 +20,12 @@
     },
     {
       "path": "pino"
+    },
+    {
+      "path": "leetcode"
     }
   ],
   "settings": {
-    "jest.disabledWorkspaceFolders": [
-      "mono"
-    ],
+    "jest.disabledWorkspaceFolders": ["mono"]
   }
 }
