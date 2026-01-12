@@ -4,8 +4,7 @@
       "path": "."
     },
     {
-      "name": "typescript-playground",
-      "path": "typescript-playground"
+      "path": "playground"
     },
     {
       "name": "factories",
@@ -23,9 +22,13 @@
     },
     {
       "path": "leetcode"
-    }
+    },
+
   ],
   "settings": {
-    "jest.disabledWorkspaceFolders": ["mono"]
+    "jest.disabledWorkspaceFolders": [
+      "mono"
+    ],
+    "mark-sharp.imagePath": "src/structy/beginner-recursion"
   }
 }

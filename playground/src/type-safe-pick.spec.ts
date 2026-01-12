@@ -1,4 +1,6 @@
-import { omit } from './type-safe-pick';
+import { describe, it, expect } from 'vitest';
+
+import { omit } from './type-safe-pick.js';
 
 import { pick as lodashPick } from 'lodash';
 

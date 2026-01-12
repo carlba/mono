@@ -1,13 +1,13 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
+  "extends": "@tsconfig/node24/tsconfig.json",
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+
     "sourceMap": true,
     "outDir": "./dist",
-    "esModuleInterop": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "moduleResolution": "nodenext",
+    "skipLibCheck": true // Skip type checking of declaration files in node_modules
   },
-  "include": ["src", "launcher.ts"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }
