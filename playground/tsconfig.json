@@ -6,7 +6,8 @@
     "outDir": "./dist",
     "resolveJsonModule": true,
     "moduleResolution": "nodenext",
-    "skipLibCheck": true // Skip type checking of declaration files in node_modules
+    "verbatimModuleSyntax": true, // Enforces .js for modules
+    "skipLibCheck": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]
