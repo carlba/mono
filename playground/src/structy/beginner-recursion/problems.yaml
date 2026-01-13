@@ -1,0 +1,26 @@
+problems:
+  # - name: sum-of-lengths
+  #   functionName: sumOfLengths
+  #   description: Sum the total length of all strings in an array
+
+  # - name: factorial
+  #   functionName: factorial
+  #   description: Calculate the factorial of a number
+
+  - name: reverse-string
+    functionName: reverseString
+    description: Recursively sum all numbers in an array
+    approachUrl: 'https://vod-adaptive-ak.vimeocdn.com/exp=1767551290~acl=%2F886ae598-72cc-4cbb-8ba2-f69359212997%2Fpsid%3Debcc0e94f63489fcd9c00d2e037fb75a2ee57f0996aabbbd291622c6115885d7%2F%2A~hmac=8d1b33fc683353511a5426ae2308d743b9c151fee26edc037c26a5c73af4c33e/886ae598-72cc-4cbb-8ba2-f69359212997/psid=ebcc0e94f63489fcd9c00d2e037fb75a2ee57f0996aabbbd291622c6115885d7/v2/playlist/av/primary/sub/151227448-c-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&locale=en&omit=opus&pathsig=8c953e4f~B22AvI2BxGRIH3Pw6385GIz-Cxg6nzSLee0bv4M-Xbc&qsr=1&r=dXM%3D&rh=2PgUlf&sf=fmp4'
+    walkthroughUrl: 'https://vod-adaptive-ak.vimeocdn.com/exp=1767551780~acl=%2Ff243f02f-2515-499b-a2a7-d1dcc2298042%2Fpsid%3D60758e743b7e134b9257707df31d14032868d2bb0ea91caabc1222ddc7c12961%2F%2A~hmac=8b7503e85295384abf6b0837da2cc7ecc696fe7f1f8a80f505b0b746f296bcb6/f243f02f-2515-499b-a2a7-d1dcc2298042/psid=60758e743b7e134b9257707df31d14032868d2bb0ea91caabc1222ddc7c12961/v2/playlist/av/primary/sub/151472722-c-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&locale=en&omit=opus&pathsig=8c953e4f~u9kFxmSGFpozRjMHMlvLyXNCBnb9f1bO2b_9pVaK460&qsr=1&r=dXM%3D&rh=395DPj&sf=fmp4'
+
+  - name: palindrome-recursive
+    functionName: palindrome
+    description: Validate if a string is a palindrome
+    approachUrl: https://vod-adaptive-ak.vimeocdn.com/exp=1767553999~acl=%2F84aee48b-5427-455a-9dc2-b1916088db8b%2Fpsid%3De826f7b2d114a1dba2513bf7776f6e99a988bc04f87e02cf73dca2f25042eaca%2F%2A~hmac=a5647ee4a41bfe56e7fbf482bfe8415ac43397c0b312ae77321ba9bd17ec2571/84aee48b-5427-455a-9dc2-b1916088db8b/psid=e826f7b2d114a1dba2513bf7776f6e99a988bc04f87e02cf73dca2f25042eaca/v2/playlist/av/primary/sub/151227527-c-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&locale=en&omit=opus&pathsig=8c953e4f~SGTwazY0YU39EtVYoucGF76v1McD8p4Fr_RpIXM6-WI&qsr=1&r=dXM%3D&rh=pb7ou&sf=fmp4
+    walkthroughUrl: https://vod-adaptive-ak.vimeocdn.com/exp=1767554024~acl=%2F06f4df39-8a02-46dc-929f-44737f3b6121%2Fpsid%3D3b2f76c27eb203949206b047c3ca1baa4a80295b47ac4b6e945ef8f6eb8b3318%2F%2A~hmac=16872ec79b88f2258470e8b595a8e8b905d64e1e3c974bc608d11c9fddb7eac4/06f4df39-8a02-46dc-929f-44737f3b6121/psid=3b2f76c27eb203949206b047c3ca1baa4a80295b47ac4b6e945ef8f6eb8b3318/v2/playlist/av/primary/sub/151472784-c-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&locale=en&omit=opus&pathsig=8c953e4f~xre9yliB0iNsPMrt0kA0PXQdRGpo4FQctJZwBfgkS7w&qsr=1&r=dXM%3D&rh=2XxP5k&sf=fmp4
+
+  - name: fibonacci
+    functionName: fibonacci
+    description: Return the n-th number of the fibonacci sequence
+    approachUrl: https://vod-adaptive-ak.vimeocdn.com/exp=1767555709~acl=%2F33572b43-f9e2-4b6e-b343-b87fd7fce008%2Fpsid%3D1d92da199456b8309c63b1b783f29467f0013e6ab5fc316337f009147c994352%2F%2A~hmac=74d095244bee2e97c9b3c560cfb4223320b28a8699c1707a5a40be4d4bf5d55b/33572b43-f9e2-4b6e-b343-b87fd7fce008/psid=1d92da199456b8309c63b1b783f29467f0013e6ab5fc316337f009147c994352/v2/playlist/av/primary/sub/152022135-c-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&locale=en&omit=opus&pathsig=8c953e4f~kJEAcrIlR3VoH6fyw6kgaBSfxbCv1dJzl58W7-veo-0&qsr=1&r=dXM%3D&rh=34q71e&sf=fmp4
+    walkthroughUrl: https://vod-adaptive-ak.vimeocdn.com/exp=1767555735~acl=%2F59003b82-538c-4a86-9625-3f849462eaea%2Fpsid%3D70d5705fc185ec16824a84a2583b47b18b62187011e47e9f03d6e5e216b63316%2F%2A~hmac=259e9bd3bd1d9f09eb3b257450cf84655587a01fbc7276da50f441b79bf7330f/59003b82-538c-4a86-9625-3f849462eaea/psid=70d5705fc185ec16824a84a2583b47b18b62187011e47e9f03d6e5e216b63316/v2/playlist/av/primary/sub/152096497-c-en-x-autogen/prot/cXNyPTE/playlist.m3u8?ext-subs=1&locale=en&omit=opus&pathsig=8c953e4f~Q2xi3zEhxFQmvyAKb3q-orEPbi8XtiA4cnHu-7Gud7E&qsr=1&r=dXM%3D&rh=3kdMkJ&sf=fmp4
